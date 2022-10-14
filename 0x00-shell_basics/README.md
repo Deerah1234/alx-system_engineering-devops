@@ -1,1 +1,1 @@
-Bash Scripting.
+Shell Scripting.
