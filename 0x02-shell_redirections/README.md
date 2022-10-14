@@ -1,1 +1,1 @@
-0x02-shell_redirections Scripts
+Shell_redirections Scripts
