@@ -2,3 +2,4 @@
 # parse and display ip address and HTTP status code from an apache access log
 
 awk '{print $1 " "$9}' apache-access.log
+
