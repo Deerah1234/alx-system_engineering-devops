@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# prints the string 'Best School' 10 times using a for loop
+
+for ((i = 0; i < 10; i=i+1))
+do
+	echo "Best School"
+done

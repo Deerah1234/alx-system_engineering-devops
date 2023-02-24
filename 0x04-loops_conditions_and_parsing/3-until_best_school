@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+# prints the string 'Best School' using a while loop
+
+counter=1
+until [ $counter -gt 10 ]
+do
+	echo "Best School"
+	((counter++))
+done

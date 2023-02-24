@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+# groups visitors by IP and HTTP status code
+# displays OCCURRENCE_NUMBER IP HTTP_CODE
+# from greatest to lowest number of occurences
+
+awk '{print $1 " "$9}' apache-access.log | sort | uniq -c | sort -nr
