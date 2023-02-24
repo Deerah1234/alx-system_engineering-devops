@@ -4,3 +4,4 @@
 # from greatest to lowest number of occurences
 
 awk '{print $1 " "$9}' apache-access.log | sort | uniq -c | sort -nr
+
