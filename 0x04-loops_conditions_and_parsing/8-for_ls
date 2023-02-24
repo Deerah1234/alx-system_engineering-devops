@@ -8,3 +8,4 @@ for directory in $directories
 do
 	echo "$directory" | cut -d "-" -f 2
 done
+
