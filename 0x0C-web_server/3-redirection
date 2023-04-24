@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# Configure the Nginx server so that /redirect_me is redirecting to another page. The redirection must be a '301 Moved Permanently'
+
+sudo apt update -y
+sudo apt install -y nginx
+sudo ufw allow 'Nginx HTTP'
+echo "Hello World!" | sudo tee /var/www/html/index.nginx-debian.html
+redirect="server_name _;\n\trewrite ^\/redirect_me google.com permanent;"
+sudo sed -i "s/server_name _;/$redirect/" /etc/nginx/sites-enabled/default
+sudo service nginx restart
