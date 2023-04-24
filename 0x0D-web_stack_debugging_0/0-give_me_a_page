@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# fix apache server connection
+
+sudo service apache2 start
